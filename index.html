@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Crystal collector</title>
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
@@ -20,23 +20,48 @@
         <br>
         <p>each time the game restarts a new value will be given to each crystal.</p>
       </main>
-    
+
+      <div class="board">
+          <h2> Wins: <span id="playerWins"></span></h2>
+      </div>
+      
+      <div class="board">
+          <h3 id="status">Best of Luck</h3>
+      </div>
+      
+      <div class="board">
+          <h2> Losses: <span id="playerLosses"></span></h2>
+      </div>
+
+        <div class="score">
+            <h2>Number to Match:
+                <span id="randomNumber"></span>
+            </h2>
+        </div>
+        
+        <div class="score">
+            <h2>Player Total:
+                <span id="finalTotal"></span>
+            </h2>
+        </div>
+
     <div class="row">
         <div class="column">
-           <img src="assets/images/6171vUCgyUL._SY450_.jpg" alt="Mountains" style="width:40%">
+           <img src="assets/images/6171vUCgyUL._SY450_.jpg"  id="greenGem" alt="greenGem" style="width:40%">
         </div>
         <div class="column">
-          <img src="assets/images/61BJPYRDZkL._SX466_.jpg" alt="Snow" style="width:40%">
+          <img src="assets/images/61BJPYRDZkL._SX466_.jpg"  id="orangeGem" alt="orangeGem" style="width:40%">
         </div>
         <div class="column">
-          <img src="assets/images/61h0eE0OhEL._SX466_.jpg" alt="Forest" style="width:40%">
+          <img src="assets/images/61h0eE0OhEL._SX466_.jpg"  id="purpleGem" alt="purpleGem" style="width:40%">
         </div>
         <div class="column">
-          <img src="assets/images/61vsddlz1IL._SY450_.jpg" alt="Mountains" style="width:40%">
+          <img src="assets/images/61vsddlz1IL._SY450_.jpg"  id="yellowGem" alt="yellowGem" style="width:40%">
         </div>
       </div>
  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+ <script src="assets/javascript/game.js"></script>
 </body>
 </html>
